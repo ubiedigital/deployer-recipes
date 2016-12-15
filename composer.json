@@ -1,0 +1,12 @@
+{
+    "name": "ubiedigital/deployer-recipes",
+    "description": "deployer recipes",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "deployer/recipes": "^4.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^1.12"
+    }
+}
