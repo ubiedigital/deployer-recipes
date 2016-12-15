@@ -11,10 +11,13 @@ php composer.phar require ubiedigital/deployer-recipes
 ```
 
 ## Recipes
+
 ### Local
 * local:shared
+
 ### Symfony
 * deploy:create_log_dir
 * doctrine:schema:update
+
 ### Symfony local
 * local:assets:install
