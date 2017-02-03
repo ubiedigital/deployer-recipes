@@ -15,6 +15,15 @@ php composer.phar require ubiedigital/deployer-recipes
 ### Local
 * local:shared
 
+### Local npm 
+* local:npm:install
+
+### Local bower
+* local:bower:install
+
+### Local gulp
+* local:gulp:build
+
 ### Symfony
 * deploy:create_log_dir
 * doctrine:schema:update
