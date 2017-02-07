@@ -29,3 +29,7 @@ task('doctrine:schema:drop', function () {
 task('doctrine:schema:update', function () {
     run('{{env_vars}} {{bin/php}} {{bin/console}} doctrine:schema:update --force {{console_options}}');
 });
+
+task('fos:elastica:reset', function () {
+    run('{{env_vars}} {{bin/php}} {{bin/console}} fos:elastica:reset {{console_options}}');
+});
