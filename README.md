@@ -26,7 +26,9 @@ php composer.phar require ubiedigital/deployer-recipes
 
 ### Symfony
 * deploy:create_log_dir
+* doctrine:schema:drop
 * doctrine:schema:update
+* doctrine:fixtures:load
 
 ### Symfony local
 * local:assets:install

@@ -18,6 +18,14 @@ task('deploy:create_log_dir', function () {
     run("chmod -R g+w {{log_dir}}");
 })->desc('Create cache dir');
 
+task('doctrine:fixtures:load', function () {
+    run('{{env_vars}} {{bin/php}} {{bin/console}} doctrine:fixtures:load --no-interaction {{console_options}}');
+});
+
+task('doctrine:schema:drop', function () {
+    run('{{env_vars}} {{bin/php}} {{bin/console}} doctrine:schema:drop --force {{console_options}}');
+});
+
 task('doctrine:schema:update', function () {
     run('{{env_vars}} {{bin/php}} {{bin/console}} doctrine:schema:update --force {{console_options}}');
 });
