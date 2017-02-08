@@ -2,6 +2,9 @@
 
 namespace Deployer;
 
+set('local_npm_cache_path', function () {
+    return (string)run('which npm-cache');
+});
 set('npm_cache_arguments', '');
 
 task('local:npm-cache:install', function () {
