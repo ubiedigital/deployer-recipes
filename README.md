@@ -17,6 +17,7 @@ php composer.phar require ubiedigital/deployer-recipes
 
 ### Local npm 
 * local:npm:install
+* local:npm-cache:install
 
 ### Local bower
 * local:bower:install
@@ -32,3 +33,4 @@ php composer.phar require ubiedigital/deployer-recipes
 
 ### Symfony local
 * local:assets:install
+* local:js-routing:dump
