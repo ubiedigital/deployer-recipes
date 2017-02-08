@@ -7,5 +7,5 @@ task('local:npm:install', function () {
 })->desc('NPM install');
 
 task('local:npm-cache:install', function () {
-    runLocally('cd {{local_release_path}} && {{local_npm_cache_path}}');
+    runLocally('cd {{local_release_path}} && {{local_npm_cache_path}} install');
 })->desc('NPM install');
