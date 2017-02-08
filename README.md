@@ -16,7 +16,6 @@ php composer.phar require ubiedigital/deployer-recipes
 * local:shared
 
 ### Local npm 
-* local:npm:install
 * local:npm-cache:install
 
 ### Local bower
