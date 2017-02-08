@@ -3,7 +3,7 @@
 namespace Deployer;
 
 set('local_gulp_path', function () {
-    return (string)run('which gulp');
+    return (string)runLocally('which gulp');
 });
 set('gulp_task', 'build');
 

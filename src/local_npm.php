@@ -3,7 +3,7 @@
 namespace Deployer;
 
 set('local_npm_cache_path', function () {
-    return (string)run('which npm-cache');
+    return (string)runLocally('which npm-cache');
 });
 set('npm_cache_arguments', '');
 
