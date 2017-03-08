@@ -33,3 +33,7 @@ task('doctrine:schema:update', function () {
 task('fos:elastica:reset', function () {
     run('{{env_vars}} {{bin/php}} {{bin/console}} fos:elastica:reset {{console_options}}');
 });
+
+task('doctrine:migrations:migrate', function () {
+    run('{{env_vars}} {{bin/php}} {{bin/console}} doctrine:migrations:migrate --no-interaction {{console_options}}');
+});

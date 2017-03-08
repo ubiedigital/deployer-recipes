@@ -29,6 +29,7 @@ php composer.phar require ubiedigital/deployer-recipes
 * doctrine:schema:drop
 * doctrine:schema:update
 * doctrine:fixtures:load
+* doctrine:migrations:migrate
 
 ### Symfony local
 * local:assets:install
